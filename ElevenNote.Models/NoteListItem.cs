@@ -11,11 +11,14 @@ namespace ElevenNote.Models
     {
         public int NoteId { get; set; }
         public string Title { get; set; }
+
         public DateTimeOffset CreatedUtc { get; set; }
+
         [Display(Name="Created")]
         public override string ToString()
         {
             return base.ToString();
         }
+
     }
 }
